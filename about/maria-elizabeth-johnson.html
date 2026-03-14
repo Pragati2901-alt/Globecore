@@ -546,46 +546,59 @@
     </section>
 
     <!-- Main Content -->
-    <main id="content" class="py-20 lg:py-28 bg-[#fafafa] relative overflow-hidden">
-            <section class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-                <div class="mb-10">
-                    <a href="meet-our-team.html" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-bold transition-colors bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                        Back to Team
-                    </a>
-                </div>
-                
-                <div class="bg-white rounded-[40px] p-8 md:p-14 shadow-[0_15px_60px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row gap-16">
-                    <div class="w-full md:w-5/12 flex-shrink-0">
-                        <div class="rounded-[32px] overflow-hidden shadow-2xl relative group">
-                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                            <img src="https://globecoreinc.com/wp-content/uploads/2025/06/maria-elizabeth-johnson-md-819x1024.png" alt="Dr. Maria Johnson" class="w-full h-auto object-cover aspect-[4/5] transform group-hover:scale-105 transition-transform duration-700">
-                        </div>
+    <main id="content" class="py-12 lg:py-20 bg-[#fafafa] relative">
+        <!-- Large Background Abstract Shapes -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-secondary/5 to-transparent rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+        </div>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 transition-all duration-500">
+            <!-- Back Button -->
+            <div class="mb-10">
+                <a href="meet-our-team.html" class="inline-flex items-center gap-2 text-secondary hover:text-primary font-bold transition-all bg-white px-5 py-2.5 rounded-full shadow-sm hover:shadow-md border border-gray-100 group">
+                    <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                    Back to Team Directory
+                </a>
+            </div>
+            
+            <!-- Two-column layout: left sticky card + right scrolling content -->
+            
+        
+        <div class="flex flex-col lg:flex-row gap-12 xl:gap-16 w-full">
+            <!-- LEFT COLUMN: Sticky Info Card -->
+            <div class="lg:w-1/3 xl:w-1/4 flex-shrink-0">
+                <div class="sticky top-32 bg-white/60 backdrop-blur-xl border border-white rounded-[32px] p-2 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden group">
+                    <div class="rounded-[28px] overflow-hidden relative mb-6">
+                        <img src="https://globecoreinc.com/wp-content/uploads/2025/06/screenshot-2025-06-05-at-10.15.06 am-1024x1024.png" alt="Maria Elizabeth Johnson" class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071e26]/60 to-transparent"></div>
                     </div>
+                    <div class="px-5 pb-6 text-center">
+                        <span class="inline-block bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-3">Clinician</span>
+                        <h2 class="text-2xl font-extrabold text-[#071e26] mb-6">Maria Elizabeth Johnson</h2>
+                        
+                        <a href="../contact.html" class="flex items-center justify-center w-full gap-2 bg-[#071e26] text-white py-3.5 px-6 rounded-2xl font-semibold hover:bg-primary transition-colors duration-300">
+                            Book Consultation
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Bio Content -->
+            <div class="lg:w-2/3 xl:w-3/4">
+                <div class="bg-white rounded-[40px] p-8 md:p-12 lg:p-14 shadow-sm border border-gray-100">
+                    <p class="text-secondary font-medium text-lg mb-8 uppercase tracking-widest pl-1 border-l-4 border-secondary">Clinician</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#071e26] leading-tight mb-12 tracking-tight drop-shadow-sm">Maria Elizabeth Johnson</h1>
                     
-                    <div class="w-full md:w-7/12 flex flex-col justify-center">
-                        <div class="flex items-center gap-3 mb-6">
-                            <span class="text-secondary font-bold tracking-widest text-[13px] uppercase bg-secondary/10 px-5 py-2 rounded-full inline-block">Director of TMS</span>
-                        </div>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#071e26] mb-8 leading-tight tracking-tight">Dr. Maria Johnson</h1>
-                        <div class="w-20 h-2 bg-gradient-to-r from-primary to-secondary rounded-full mb-10"></div>
-                        
-                        <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                            <p class="text-gray-600 leading-relaxed mb-6">My job involves helping people. I work with diverse individuals and families to overcome the struggles they are going through and help them find the find the path they want to travel. I also create group therapy sessions to help look at behavioral and interpersonal stressors and how to solve them. I also provide psychological evaluations for clients looking to define, understand, and diagnose symptoms to better understand their behavior as well as provide a guide for treatment. I offer consultation for clinicians and young therapists wanting guidance on how to get licensed and practice today. Similarly, I create workshops for personal and professional development.</p><p class="text-gray-600 leading-relaxed mb-6">Through all my services, I use multicultural competency and cultural awareness. This process allows me to create an environment for people who feel a challenged sense of belonging. It is an effective tool in creating an open and safe space for you. I also use family systems and interpersonal approaches. I help you identify your roles in life and how those roles relate to those around you. This allows you to see who you are and know your purpose in life. Lastly, I enjoy using motivational interviewing. This is a systematic, structured approach that can help you deal with massive life changes and decision making.</p><p class="text-gray-600 leading-relaxed mb-6">I want to build a rapport with you. I strive to get to know you as a person not defined by the choices you have made. There are no bad people, only those who have made different choices. It is important for me to connect with you and make you feel like I am someone you can trust and share anything with. No matter what stage of life you are in, I am here to see you as you are and work with you to find the path that you want to be on.</p><p class="text-gray-600 leading-relaxed mb-6">I see you as more than the judgment others have placed on you. I specialize in work with forensic populations and those in the penal system. Whether it is you or a family member struggling to find hope amidst difficult realities, I provide hope. If you have already been to jail or at jeopardy of going to jail, it can feel as though society has already placed their judgment on you, and there is no way to change. I am here to show you that there is more to life than your past or the issues that you are dealing with. There is hope everywhere; the journey is about finding it and realigning the joy in your life.</p><p class="text-gray-600 leading-relaxed mb-6">Many of my clients are dealing with the same issue of feeling like they do not belong. I work with those dealing with interpersonal conflict, the LBGTQ+ community, and people with behavioral concerns. Whether it is helping an individual or their family deal with trying to come to terms with certain issues and how to move forward to ensure progression, I am here to help guide you to the path you want to travel. Even with my consultation services, I aim to help young therapists on their journey down being a therapist and what is necessary for them to be the best clinician they can be.</p><p class="text-gray-600 leading-relaxed mb-6">Specialties include:depression and anxiety; trauma; behavioral concerns; addictions; grief and loss; issues tied to self-esteem/identity; interpersonal conflict; LGBTQ+ issues; relationship, identity, and marriage issues; families managing the court system; community re-entry; finding purpose</p><p class="text-gray-600 leading-relaxed mb-6">Residency and Clinical Psychopharmacology Research FellowshipDepartment of PsychiatryMedical College of Georgia (MCG)</p><p class="text-gray-600 leading-relaxed mb-6">Internship in Psychiatry (2004)Department of PsychiatryUniversity of Arizona</p><p class="text-gray-600 leading-relaxed mb-6">Doctor of Medicine (MD, 2002)School of MedicineMedical College of Georgia (MCG)</p><p class="text-gray-600 leading-relaxed mb-6">3355 Lenox Road NE.Suite 1000Atlanta, GA 30326.(770) 284-1044</p><p class="text-gray-600 leading-relaxed mb-6">Clinicians and Consultants areavailable to see clientsM-F from 9 am – 7 pm andSaturdays by appointment only.</p><p class="text-gray-600 leading-relaxed mb-6">See Our TripsCorporate Development (Learn More)Personal Development (Learn More)Jobs at GlobeCore,Inc</p><p class="text-gray-600 leading-relaxed mb-6">©2023 GlobeCoRe, IncDesigned by Highfalutin ConsultingMaintained byHowste Technical Services.</p><p class="text-gray-600 leading-relaxed mb-6">Please do not include confidential or private information regarding your health condition in this form. This form is for general questions or messages to the GlobeCoRe practitioners.</p><p class="text-gray-600 leading-relaxed mb-6">Clinicians and Consultants areavailable to see clientsM-F from 9 am – 7 pm andSaturdays by appointment only.</p><p class="text-gray-600 leading-relaxed mb-6">See Our TripsCorporate Development (Learn More)Personal DevelopmenAt (Learn More)Jobs at GlobeCore, Inc</p><p class="text-gray-600 leading-relaxed mb-6">3355 Lenox Road NE.Suite 700Atlanta, GA 30326.(770) 284-1044</p>
-                        </div>
-                        
-                        <div class="mt-12 pt-10 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
-                            <a href="../contact.html" class="inline-flex items-center justify-center bg-primary text-white font-bold py-4 px-10 rounded-full hover:bg-secondary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg">
-                                Schedule an Appointment
-                            </a>
-                            <a href="tel:7702841044" class="inline-flex items-center justify-center border-2 border-primary text-primary font-bold py-4 px-10 rounded-full hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300 text-lg">
-                                (770) 284-1044
-                            </a>
-                        </div>
+                    <div class="prose prose-lg max-w-none">
+                        <h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Ashley Martinez, LPC</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My Services Offered</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">What it is like being in session with me</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Treatment/Approach modality</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My specialties</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">How therapy helps</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My credentials</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My hobbies</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Education</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Licensure</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Honors, Awards & Memberships</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Specialties</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Clinical & Consulting Interests</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">What it’s Like to Work with Me</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Personal Highlights</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My Hobbies</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">GlobeCoRe</h3>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
+        
+<!-- END OF TWO COLUMN LAYOUT --></div></section></main>
 
     <footer id="contact" class="relative bg-gradient-to-b from-deepTeal to-[#024d5e] text-gray-200 overflow-hidden">
 
@@ -806,3 +819,36 @@
 </body>
 
 </html>
+        <div class="flex flex-col lg:flex-row gap-12 xl:gap-16 w-full">
+            <!-- LEFT COLUMN: Sticky Info Card -->
+            <div class="lg:w-1/3 xl:w-1/4 flex-shrink-0">
+                <div class="sticky top-32 bg-white/60 backdrop-blur-xl border border-white rounded-[32px] p-2 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden group">
+                    <div class="rounded-[28px] overflow-hidden relative mb-6">
+                        <img src="https://globecoreinc.com/wp-content/uploads/2020/12/df4262_012158a168364eef9cd6dd673216b8da_mv2.jpg" alt="Dr. Kelly Lewis-Arthur" class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071e26]/60 to-transparent"></div>
+                    </div>
+                    <div class="px-5 pb-6 text-center">
+                        <span class="inline-block bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-3">Ph.D.</span>
+                        <h2 class="text-2xl font-extrabold text-[#071e26] mb-6">Dr. Kelly Lewis-Arthur</h2>
+                        
+                        <a href="../contact.html" class="flex items-center justify-center w-full gap-2 bg-[#071e26] text-white py-3.5 px-6 rounded-2xl font-semibold hover:bg-primary transition-colors duration-300">
+                            Book Consultation
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Bio Content -->
+            <div class="lg:w-2/3 xl:w-3/4">
+                <div class="bg-white rounded-[40px] p-8 md:p-12 lg:p-14 shadow-sm border border-gray-100">
+                    <p class="text-secondary font-medium text-lg mb-8 uppercase tracking-widest pl-1 border-l-4 border-secondary">Ph.D.</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#071e26] leading-tight mb-12 tracking-tight drop-shadow-sm">Dr. Kelly Lewis-Arthur</h1>
+                    
+                    <div class="prose prose-lg max-w-none">
+                        <h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Dr. Kelly Lewis-Arthur, Ph.D.</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My Services Offered</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">What it is like being in session with me</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Treatment/Approach modality</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My specialties</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">How therapy helps</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My credentials</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My hobbies</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Education</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Licenses</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Honors, Awards & Memberships</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Specialties</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Clinical & Consulting Interests</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">What it’s Like to Work with Me</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">Personal Highlights</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">My Hobbies</h3>\n<h3 class="text-2xl font-bold text-deepTeal mt-8 mb-4">GlobeCoRe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
